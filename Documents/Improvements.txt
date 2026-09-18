@@ -1,0 +1,12 @@
+CSS Implementation:
+
+I created a separate stylesheet named http://style.css and saved it inside a folder named CSS.
+
+To connect the HTML pages to the stylesheet, I added a link tag inside the head section of each HTML file.
+
+The link tag used is: link rel="stylesheet" href="CSS/style.css".
+
+The CSS file is used to style the whole website. It controls the colors, fonts, spacing, header, navigation menu, main content area and footer.
+
+This makes the website look the same on all pages and makes it easier to change the design in one place.
+
