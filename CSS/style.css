@@ -217,7 +217,6 @@ main p {
   gap: 30px;
 }
 
-/* This will work for BOTH class and id */
 .contact-form, #contactForm {
   display: flex;
   flex-direction: column;
