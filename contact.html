@@ -7,6 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"
     <title>Contact Us</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <style>
+.contact-wrapper { display: block !important; }
+#contactForm, .contact-form {
+  width: 90% !important;
+  max-width: 500px !important;
+  margin: 20px auto !important;
+  background: white !important;
+  padding: 25px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+#contactForm input, #contactForm textarea, .contact-form input, .contact-form textarea {
+  padding: 12px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 8px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+#contactForm button, .contact-form button {
+  background: #f4a300 !important;
+  color: white !important;
+  padding: 12px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+}
+#nameError, #emailError, #phoneError, #messageError { min-height: 18px; font-size: 12px; color: red; }
+</style>
 </head>
 <body>
     <header>
