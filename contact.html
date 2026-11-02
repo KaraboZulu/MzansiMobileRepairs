@@ -1,97 +1,103 @@
-<doctype html>
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-     <meta name="description" content="Mzansu Mobile Repairs - Affordable phone repairs in South Africa">
+    <meta name="description" content="Mzansi Mobile Repairs - Affordable phone repairs in South Africa">
     <meta name="keywords" content="phone repair, screen repair, battery replacement, South Africa">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="CSS/style.css">
     <style>
-.contact-wrapper { display: block !important; }
-#contactForm, .contact-form {
-  width: 90% !important;
-  max-width: 500px !important;
-  margin: 20px auto !important;
-  background: white !important;
-  padding: 25px !important;
-  border-radius: 12px !important;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 12px !important;
-}
-#contactForm input, #contactForm textarea, .contact-form input, .contact-form textarea {
-  padding: 12px !important;
-  border: 1px solid #ccc !important;
-  border-radius: 8px !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-}
-#contactForm button, .contact-form button {
-  background: #f4a300 !important;
-  color: white !important;
-  padding: 12px !important;
-  border: none !important;
-  border-radius: 8px !important;
-  font-weight: bold !important;
-  cursor: pointer !important;
-}
-#nameError, #emailError, #phoneError, #messageError { min-height: 18px; font-size: 12px; color: red; }
-</style>
+      
+      .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+      @media(max-width: 768px){ .contact-wrapper{grid-template-columns:1fr;} }
+      #contactForm {
+        background: white; padding: 25px; border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        display: flex; flex-direction: column; gap: 6px;
+        max-width: 500px; width: 100%;
+      }
+      #contactForm input, #contactForm textarea, #contactForm select {
+        padding: 12px 14px; border: 1px solid #ccc; border-radius: 8px;
+        font-size: 15px; width: 100%; box-sizing: border-box;
+      }
+      #contactForm button {
+        background: #f4a300; color: white; padding: 12px; border: none;
+        border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px;
+      }
+      #contactForm button:hover { background: #222; }
+      .error-msg { min-height: 18px; font-size: 12px; color: red; display: block; }
+      #success { min-height: 20px; color: green; font-weight: bold; }
+    </style>
 </head>
 <body>
     <header>
-        <img src="images/logo.png.png" style="width:85;height:75;">
+        <img src="images/logo.png.png" style="width:85px;height:75px;">
         <nav>
-            <a href="home.html">Home|</a>
-            <a href="about.html">About Us|</a>
-            <a href="services.html">Services|</a>
-            <a href="gallery.html">Gallery|</a>
-            <a href="contact.html">Contact Us|</a>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
         </nav>    
     </header>
     <main>
         <h1>Contact Us</h1>
-        <p>Get in touch with<strong> Mzansi Mobile Repairs</strong>. We're here to help!</p> 
-        <h2>How to Reach Us</h2>
-        <h3>Call Us</h3> 
-        <p><a herf="tel:+27645964645">+27645964645</a></p>   
-        <h3>Email Us</h3>
-        <p><a href="mailto:info@mzansimobilerepairs.co.za">info@mzansimobilerepairs.co.za</a></p>
-        <h3>Business Hours</h3>
-        <p>Monday - Friday: 8am-5pm<br>
-        Saturday: 8am - 1pm<br>
-        Sunday: CLOSED
-        </p>
-        <h3>Visit Our Shop</h3>
-        <p>
-            <strong>Address:</strong><br>245 Vilakazi Street<br>Orlando East, Soweto<br>Gauteng, 1884
-                </p>
-    
-    <div style="margin: 20px 0; border-radius: 12px; overflow: hidden;">
-      <iframe src="https://maps.google.com/maps?q=245%20Vilakazi%20Street,%20Orlando%20East,%20Soweto&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-        </p>
-        <h2>Send Us a Message</h2>
-        <form>
-            <label>Name:</label><br>
-            <input type="text" name="name"><br><br>
+        <p>Get in touch with <strong>Mzansi Mobile Repairs</strong>. We're here to help!</p> 
+        
+        <div class="contact-wrapper">
+          <div>
+            <h2>How to Reach Us</h2>
+            <h3>Call Us</h3> 
+            <p><a href="tel:+27645964645">+27645964645</a></p>   
+            <h3>Email Us</h3>
+            <p><a href="mailto:info@mzansimobilerepairs.co.za">info@mzansimobilerepairs.co.za</a></p>
+            <h3>Business Hours</h3>
+            <p>Monday - Friday: 8am-5pm<br>
+            Saturday: 8am - 1pm<br>
+            Sunday: CLOSED</p>
+            <h3>Visit Our Shop</h3>
+            <p><strong>Address:</strong><br>245 Vilakazi Street<br>Orlando East, Soweto<br>Gauteng, 1884</p>
+            <div style="margin: 20px 0; border-radius: 12px; overflow: hidden;">
+              <iframe src="https://maps.google.com/maps?q=245%20Vilakazi%20Street,%20Orlando%20East,%20Soweto&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
 
-            <label>Email:</label><br>
-            <input type="email" name="email"><br><br>
+          <div>
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" class="contact-form">
+                <label>Name:</label>
+                <input type="text" id="name" name="name">
+                <span id="nameError" class="error-msg"></span>
 
-            <label>Phone:</label><br>
-            <input type="tel" name="phone"><br><br>
+                <label>Email:</label>
+                <input type="email" id="email" name="email">
+                <span id="emailError" class="error-msg"></span>
 
-            <label>Message:</label><br>
-            <textarea name="message" rows="5" cols="30"></textarea><br><br>
+                <label>Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <span id="phoneError" class="error-msg"></span>
 
-            <button type="submit">Send Message</button>
-        </form>
+                <label>Service:</label>
+                <select id="service" name="service">
+                  <option value="">Select a service</option>
+                  <option>Screen Repair</option>
+                  <option>Battery Replacement</option>
+                  <option>Charging Port</option>
+                </select>
+                <span id="serviceError" class="error-msg"></span>
+
+                <label>Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <span id="messageError" class="error-msg"></span>
+
+                <button type="submit">Send Message</button>
+                <span id="success"></span>
+            </form>
+          </div>
+        </div>
     </main>
     <footer>&copy; 2026 Mzansi Mobile Repairs <p id="datetime"></p></footer>
-
     <script src="Javascript/script.js"></script>
 </body>
- </html>
+</html>
